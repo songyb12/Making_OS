@@ -1,0 +1,10 @@
+nasm -f bin -o boot1.img boot1.asm
+
+binary 형태의 Format으로 지정
+boot1.img 라는 이름으로 Outfile
+
+
+nasm -f bin -o boot1.bin boot1.asm
+nasm -f bin -o kernel1.bin kernel1.asm
+
+copy boot1.bin+kernel1.bin /b kernel1.img
